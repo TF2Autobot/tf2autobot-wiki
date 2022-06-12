@@ -54,7 +54,7 @@ So how can I find the sku of a specific item?
     - `strange`: For any Strange as second quality, i.e. **Strange Unusual**, **Strange Haunted**, **Strange Genuine** and etc.
     - `kt-#`: Parameter `killstreak` level, replace `#` with either 1, 2, or 3.
     - `u#`: Parameter `effect`, replace `#` with a valid Unusual Effect ID.
-    - `p#`: Parameter `paint`, replace `#` with a valid [Paint Decimal number or Paint partial sku](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-).
+    - `p#`: Parameter `paint`, replace `#` with a valid [Paint Decimal number or Paint partial sku](./Library#paints-).
     - `pk#`: Parameter `paintkit`, replace `#` a valid Paint Kit ID.
     - `w#`: Parameter `wear`, replace `#` with a number, 1 (Factory New) - 5 (Battle Scarred).
     - `td-#`: Parameter `target`, replace `#` with targeted item defindex.
@@ -90,4 +90,4 @@ _Table 3.2: Sub-parameters for `name` and `defindex`._
 
 
 
-Continue: [Listing settings parameters](https://github.com/TF2Autobot/tf2autobot/wiki/Listing-settings-parameters)
+Continue: [Listing settings parameters](./Listing-settings-parameters)

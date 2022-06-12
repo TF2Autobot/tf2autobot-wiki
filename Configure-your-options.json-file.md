@@ -8,14 +8,14 @@ The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder.
 
 **Only for advanced users:**\
 If you haven't started the bot yet, you will have to create the directory yourself which is only advisable for advanced users because it can lead to mistakes.\
-Inside the root directory created a folder called `files` and inside that folder create another one called `your_bot_steam_username` (so the login name that you use to sign into steam). There you can copy the options.json file obtained from the config generator or use the template from [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-).
+Inside the root directory created a folder called `files` and inside that folder create another one called `your_bot_steam_username` (so the login name that you use to sign into steam). There you can copy the options.json file obtained from the config generator or use the template from [`here`](./Library#optionsjson-content-).
 
 ## Using the manual method
 If you don't want to use the config generator for the initial setup of your `options.json` file you can do it manually.
 
 To do so you can either start up the bot for the first time, which will create your `options.json` file located in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder and then edit this file yourself by using the explanations for the variables on this page.
 
-Or if you are an advanced user you can obtain the template from [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) and continue to create the appropriate folders using the method described above.
+Or if you are an advanced user you can obtain the template from [`here`](./Library#optionsjson-content-) and continue to create the appropriate folders using the method described above.
 
 # Configure options.json file after the initial setup (Optional)
 
@@ -24,7 +24,7 @@ After the initial setup and creation of your `options.json` file you might want 
 Remember:
 This file was generated after you ran your bot for the first time. The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder. 
 
-Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) to view the content.
+Click [`here`](./Library#optionsjson-content-) to view the content.
 
 ## How to read?
 
@@ -285,7 +285,7 @@ property: `.reputationCheck`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 |    `.checkMptfBanned`     | `boolean` | `false` | This is especially for Marketplace.tf whitelisted sellers, which stated in the Seller Terms & Conditions that "You will not trade with MarketplaceTF banned users, including any bots they may own". |
-|  `.reptfAsPrimarySource`  | `boolean` | `false` | Set this to `true` if you want your bot to get reputation data from [`rep.tf`](https://rep.tf/). Do note that rep.tf has been quite slow nowadays, so it's recommended to always set this to `false`. If you set the `.checkMptfBanned` to `true` and this to `false`, please make sure to fill in the [`MPTF_API_KEY`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#marketplacetf-api-key) in your enviromental file. |
+|  `.reptfAsPrimarySource`  | `boolean` | `false` | Set this to `true` if you want your bot to get reputation data from [`rep.tf`](https://rep.tf/). Do note that rep.tf has been quite slow nowadays, so it's recommended to always set this to `false`. If you set the `.checkMptfBanned` to `true` and this to `false`, please make sure to fill in the [`MPTF_API_KEY`](./Configuring-the-bot#marketplacetf-api-key) in your enviromental file. |
 
 ---
 
@@ -451,7 +451,7 @@ property: `.giftWithoutMessage`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.allow` | `boolean` | `false` | If set to `true` (Not recommended), your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/TF2Autobot/tf2autobot/wiki/Library#gift-words-). |
+| `.allow` | `boolean` | `false` | If set to `true` (Not recommended), your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](./Library#gift-words-). |
 
 ---
 
@@ -529,31 +529,31 @@ Parent property key: `highValue`
 property: `.spells`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.names` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
+| `.names` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](./Library#spells-)). Example: `["Team Spirit Footprints"]`. |
 
 ### - Sheens ✨ [^](#optionsjson-structure)
 property: `.sheens`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.names` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). Example: `["Team Shine"]`. |
+| `.names` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](./Library#sheens-)). Example: `["Team Shine"]`. |
 
 ### - Killstreakers 🔥 [^](#optionsjson-structure)
 property: `.killstreakers`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.names` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
+| `.names` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](./Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
 
 ### - Strange Parts 🎰 [^](#optionsjson-structure)
 property: `.strangeParts`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.names` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
+| `.names` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](./Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
 
 ### - Painted 🎨 [^](#optionsjson-structure)
 property: `.painted`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.names` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
+| `.names` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](./Library#paints-). Example: `["After Eight"]`. |
 
 
 #### Exception skus [^](#optionsjson-structure)
@@ -797,7 +797,7 @@ Parent property key: `offerReceived`
 Property: `.sendPreAcceptMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot to send [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
+| `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot to send [pre-accepted](./Library#--accepted-message-) message to the trade partner. |
 
 ### - Auto-decline offer that contains Non-TF2 items ❌ [^](#optionsjson-structure)
 | Option | Type | Default | Description |
@@ -813,7 +813,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot to automatically decline any trades with `🟥_INVALID_VALUE` as the ONLY manual review reason where our side value is more than their side value, or do not match `exceptionValue.skus` and value difference is more than `exceptionValue.valueInRef` |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 
 #### • Invalid-value exception ✅
@@ -848,7 +848,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot to automatically decline trades with `🟨_INVALID_ITEMS`. |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -865,7 +865,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `false`   | Set this to `true` if you do want your bot to automatically decline trades with `🟧_DISABLED_ITEMS`. |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -886,7 +886,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `false`   | Set this to `true` if you do want your bot to automatically decline trades with `🟦_OVERSTOCKED` |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -907,7 +907,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `false`   | Set this to `true` if you do want your bot to automatically decline trades with `🟩_UNDERSTOCKED` |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -925,7 +925,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `false`   | If set to `true`, the bot will decline any unusual or values more than `minKeys` items that it determines as having been duplicated. |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -938,7 +938,7 @@ Sub-Property: `.autoDecline`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `false`   | If set to `true`, the bot will decline offer that was failed to check for duped. |
-| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](./Library#--auto-decline-reply-). |
 
 ===
 
@@ -976,7 +976,7 @@ Parent-Property: `manualReview`
 | :----: | :--: | :-----: | :---------- |
 |        `.enable`        | `boolean` | `true`  | Offers with reasons such as `🟥_INVALID_VALUE` and so on will require manual review by you. |
 |   `.showOfferSummary`   | `boolean` | `true`  | If set to `true`, your bot will show the trade offer summary to the trade partner. Otherwise, it will only notify the trade partner that their offer is being held for review. |
-| `.showReviewOfferNote`  | `boolean` | `true`  | By default, your bot will show notes on for each [manual review reason](https://github.com/idinium96/tf2autobot/wiki/FAQ#why-my-bot-dont-acceptdecline-the-trade-automatically) |
+| `.showReviewOfferNote`  | `boolean` | `true`  | By default, your bot will show notes on for each [manual review reason](./FAQ#why-my-bot-dont-acceptdecline-the-trade-automatically) |
 | `.showOwnerCurrentTime` | `boolean` | `true`  | By default, your bot will show the owner's time when sending your trade partner any manual offer review notifications. |
 | `.showItemPrices` | `boolean` | `true`  | set to `true` if you want to include item prices (buying/selling prices) - only for owner. |
 
@@ -1328,7 +1328,7 @@ Parent property: `customMessage`
 | `.success`| `string` | `""` | Bot message when a trade has been successfully made. |
 
 - Default message: **/pre ✅ Success! The offer went through successfully.**
-- Read: [FAQ](https://github.com/TF2Autobot/tf2autobot/wiki/FAQ#how-to-set-custom-welcomesuccess-messages)
+- Read: [FAQ](./FAQ#how-to-set-custom-welcomesuccess-messages)
 
 ===
 
@@ -1354,7 +1354,7 @@ Sub-property: `.decline`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.decline[DECLINE_REASON]`| `string` | `""` | Refer: [Default declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--declined-with-other-reasons-). |
+| `.decline[DECLINE_REASON]`| `string` | `""` | Refer: [Default declined reply](./Library#--declined-with-other-reasons-). |
 
 ===
 
@@ -1363,7 +1363,7 @@ Sub-property: `.accepted`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.accepted[AutoOrManual][type]`| `string` | `""` | Refer: [Default accepted message](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-). |
+| `.accepted[AutoOrManual][type]`| `string` | `""` | Refer: [Default accepted message](./Library#--accepted-message-). |
 
 ===
 
